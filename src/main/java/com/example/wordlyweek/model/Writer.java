@@ -21,7 +21,7 @@ public class Writer {
     private String bio;
 
     @ManyToMany
-    @JoinTable(name = "writer_magazine", joinColumns = @JoinColumn(name = "writerid"), inverseJoinColumns = @JoinColumn(name = "magazineId"))
+    @JoinTable(name = "writer_magazine", joinColumns = @JoinColumn(name = "writerid"), inverseJoinColumns = @JoinColumn(name = "magazineid"))
     @JsonIgnoreProperties("writers")
     private List<Magazine> magazines;
 
