@@ -17,5 +17,5 @@ public interface WriterRepository {
 
     void deleteWriter(int writerId);
 
-    List<Magazine> getWriterMagazine(int magazineId);
+    List<Magazine> getWriterMagazine(int writerId);
 }
